@@ -16,7 +16,8 @@ const studentProfileSchema = new mongoose.Schema(
     nationalId: String,
     bloodGroup: String,
     joinedYear: Number,
-    currentAcademicStatus: { type: String, default: 'active' }
+    currentAcademicStatus: { type: String, default: 'active' },
+    lastPromotionAt: Date
   },
   { timestamps: true }
 );
